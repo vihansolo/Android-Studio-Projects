@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnFade"
+            android:layout_width="112sp"
+            android:layout_height="58sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="84dp"
+            android:text="@string/fade" />
+
+        <Button
+            android:id="@+id/btnScale"
+            android:layout_width="112sp"
+            android:layout_height="58sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btnFade"
+            android:layout_marginEnd="76dp"
+            android:text="@string/scale" />
+
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="112sp"
+            android:layout_height="58sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnFade"
+            android:layout_marginTop="201dp"
+            android:text="@string/rotate" />
+
+        <Button
+            android:id="@+id/btnSlide"
+            android:layout_width="112sp"
+            android:layout_height="58sp"
+            android:text="@string/slide"
+            android:layout_alignStart="@+id/btnScale"
+            android:layout_alignTop="@+id/btnRotate" />
+
+        <Button
+            android:id="@+id/btnSharedElement"
+            android:layout_width="272dp"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnFade"
+            android:layout_marginBottom="228dp"
+            android:text="@string/sharedElement" />
+
+        <Button
+            android:id="@+id/btnBottomSheet"
+            android:layout_width="272dp"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnFade"
+            android:layout_marginBottom="114dp"
+            android:text="@string/bottomSheet" />
+
+    </RelativeLayout>
+
+</FrameLayout>
