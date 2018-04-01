@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Study League App</string>
+    <string name="Hello">Hello World!</string>
+    <string name="EnterText">Enter Text</string>
+
+    //Buttons
+    <string name="SubmitButton">Submit</string>
+</resources>

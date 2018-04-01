@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ga.vihanggarud.www.quizapp.Ques">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="100dp"
+        android:layout_height="80sp"
+        android:text="@string/score"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/timer" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="100dp"
+        android:layout_height="80sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/quesNo"
+        android:layout_width="125dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/quesNo"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/timer" />
+
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/score"
+        android:gravity="center"
+        android:text="@string/ques1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ques"
+        android:padding="10sp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/ques1Option1"
+            android:padding="10sp" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ques1Option2"
+            android:padding="10sp" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/ques1Option3"
+            android:padding="10sp" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/ques1Option4"
+            android:padding="10sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:text="@string/submit"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

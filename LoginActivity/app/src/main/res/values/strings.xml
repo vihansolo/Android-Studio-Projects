@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Login Activity</string>
+
+    //TextView
+    <string name="msg">Welcome to the next page.</string>
+
+    //EditText
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    //Buttons
+    <string name="submit">Submit</string>
+
+</resources>

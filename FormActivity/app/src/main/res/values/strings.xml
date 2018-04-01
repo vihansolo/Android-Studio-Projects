@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Form Activity</string>
+
+    //EditTexts
+    <string name="enterName">Enter Name</string>
+    <string name="enterRollNo">Enter Roll No.</string>
+    <string name="enterBranch">Enter Branch</string>
+    <string name="enterDiv">Enter Division</string>
+    <string name="enterEmailId">Enter Email ID</string>
+
+    //Buttons
+    <string name="submitButton">Submit</string>
+    <string name="backButton">Back</string>
+
+    //TextViews
+    <string name="studentTag">Student Details :</string>
+</resources>

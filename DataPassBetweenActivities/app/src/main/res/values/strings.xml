@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DataPassBetweenActivities</string>
+
+    //EditText
+    <string name="nameOfPerson">Enter Name</string>
+    <string name="ageOfPerson">Enter Age</string>
+
+    //RadioButtons
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+
+    //Buttons
+    <string name="submitButton">Submit</string>
+    <string name="backButton">Back</string>
+    <string name="popUpMenu">Pop Up Menu</string>
+
+    //Colors
+    <string name="redColor">Red color</string>
+    <string name="blueColor">Blue Color</string>
+    <string name="magentaColor">Magenta Color</string>
+
+</resources>

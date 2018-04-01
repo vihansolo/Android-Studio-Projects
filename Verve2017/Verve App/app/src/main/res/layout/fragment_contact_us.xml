@@ -1,0 +1,157 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="thegreymanshow.verve2017.Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/contact_us" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/contact_us"
+            android:textAlignment="center"
+            android:textColor="@color/text" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:alpha="1"
+            android:background="@color/lightgrey"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="Social Connect"
+                android:textColor="@color/orange2"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head"
+                android:padding="15dp"
+                android:text="@string/social"
+                android:textAlignment="center"
+                android:textColor="@color/text" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/website"
+
+                android:onClick="onClick"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/text"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="@color/lightgrey"
+                app:cardCornerRadius="12dp"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/imageView1"
+                    android:text="www.studentcouncil.tk"
+                    android:textColor="@color/text"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/facebook"
+                android:onClick="onClick"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/text"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:layout_toRightOf="@+id/website"
+                app:cardBackgroundColor="#01579b"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/imageView2"
+                    android:text="facebook"
+                    android:gravity="center"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/youtube"
+                android:onClick="onClick"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/website"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#c62828"
+                app:cardCornerRadius="12dp"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/imageView4"
+                    android:text="youtube"
+                    android:textColor="@color/text"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/insta"
+                android:onClick="onClick"
+                app:cardCornerRadius="12dp"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_below="@+id/facebook"
+                android:layout_margin="12dp"
+                android:layout_toRightOf="@+id/youtube"
+                app:cardBackgroundColor="@color/orange3"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/imageView5"
+                    android:text="Instagram"
+                    android:gravity="center"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+

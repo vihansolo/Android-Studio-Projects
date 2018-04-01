@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Firebase Login</string>
+
+    //TextView
+    <string name="msg">Congratulations you have successfully completed Login.</string>
+    <string name="notRegistered">Not Registered?</string>
+
+    //EditText
+    <string name="enterEmailID">Enter Email ID</string>
+    <string name="enterPassword">Enter Password</string>
+
+    //Buttons
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+</resources>

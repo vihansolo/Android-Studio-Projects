@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">gMapBasic</string>
+    <string name="title_activity_maps">gMapBasic</string>
+
+    //EditTexts
+    <string name="searchBar">Search</string>
+
+    //Buttons
+    <string name="searchButton">Search</string>
+    <string name="zoomIn">+</string>
+    <string name="zoomOut">-</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+</resources>

@@ -1,0 +1,7 @@
+#Sat Sep 16 10:30:30 IST 2017
+base.0=C\:\\Users\\HP\\AndroidStudioProjects\\Bingo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_e5feb8e53cfcf5ad1b9a24738b511206dd3dd41d
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\HP\\AndroidStudioProjects\\Bingo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7d1b6cecae371f34aadf70225c08ea9d3fd34054\\classes.dex
+base.1=C\:\\Users\\HP\\AndroidStudioProjects\\Bingo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7d1b6cecae371f34aadf70225c08ea9d3fd34054
+file.0=C\:\\Users\\HP\\AndroidStudioProjects\\Bingo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_e5feb8e53cfcf5ad1b9a24738b511206dd3dd41d\\classes.dex

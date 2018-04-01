@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+
+    //EditTexts
+    <string name="enterNumber1">Enter 1st number</string>
+    <string name="enterNumber2">Enter 2nd number</string>
+
+    //Buttons
+    <string name="add">Add</string>
+    <string name="subtract">Subtract</string>
+    <string name="multiply">Multiply</string>
+    <string name="divide">Divide</string>
+    <string name="clear">Clear</string>
+
+    //TextViews
+    <string name="Result">Result : </string>
+    <string name="splashScreen">Welcome To My App!</string>
+
+</resources>

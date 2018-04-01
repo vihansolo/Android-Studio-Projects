@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Factorial</string>
+
+    //TextViews
+    <string name="factorial">Factorial : </string>
+
+    //EditTexts
+    <string name="getNumber">Enter a number</string>
+
+    //Buttons
+    <string name="getFactorial">Factorial</string>
+</resources>

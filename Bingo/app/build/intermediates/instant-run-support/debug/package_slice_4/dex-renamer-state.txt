@@ -1,0 +1,4 @@
+#Tue Feb 06 14:24:27 IST 2018
+base.0=G\:\\AndroidStudioProjects\\Bingo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex

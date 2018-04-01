@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">Student Council</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="events">
+        <item>Luck and Strategy</item>
+        <item>Mind the Snakes</item>
+        <item>Bamboozled</item>
+
+        <item>Mr and Mrs Freshers</item>
+        <item>Vegas Safari</item>
+        <item>Spill the Thrill</item>
+
+        <item>Artsy Craftsy</item>
+
+
+        <item>Heist in Vegas</item>
+        <item>Situation Room</item>
+        <item>Mystery Box</item>
+
+
+        <item>ShutterBug</item>
+
+
+    </array>
+
+    <string name="aboutvit"> The Vidyalankar Group of Educational Institutes is a prestigious education specialist that has been recognized (NBA) and has qualitative institutes with 25+ branches accross India.
+
+Managed by the Vidyalankar Dyanapeeth Trust Established in 1960 by Prof Chandrashekar S. Deshpande an all India topper, the Vidyalankar Group is marching ahead resolutely, ably steered by its late Chairperson Dr. Sanjeewani Deshpande along with Mr. Vishwas Deshpande and Mrs. Rashmi Deshpande (Managing Trustees).
+ </string>
+
+    <string name="collegelife"> Being popularly known as a Shopping Mall amoung students visiting for the first time, Vidyalankar boasts of one of the best infrastructure and campus facilities it offers to its students starting from Air-conditioned classrooms to excellent state-of-art library,canteen,gymkhana and sports facilities.
+        Thus, ensuring all round development of all students be it Engineering, Diploma or Polytechnic. The whole campus is equipped with hi-speed Wifi and advanced laboratories to ensure nothing stops the students from learning what they want.  </string>
+
+    <string name="aboutverve"> The scene is set; your eyes see every person looking chic and elegant, your heartbeat is in sync with the latest trending EDM your ears can hear and you smell the scent of zeal in the air. Well then, you are experiencing the ultimate expression of enthusiasm- VERVE.
+
+The true spirit and mood of our fests are the result of creative hard work put in by the entire organizing committee. Thus it proves to be an ideal platform for students to develop management, decision making and negotiation skills. It is a place where innovative ideas are encouraged and implemented. And in many ways, this develops leadership skills in our students</string>
+
+    <string name="contact_us"> Feel free to contact us anytime,anywhere on the go ! Our pub heads are just a call away ! We will be looking forward to hear from you.</string>
+
+    <string name="social">Just Click any one the following cards to visit and follow us on these pages to stay updated and notified about each and everything about Verve !</string>
+
+
+    <string name="tech3">Luck and Strategy.\n\n
+
+        Description:\n\n
+        Strategize your points, bet,
+        earn and lend them, be sure
+        to use them in your
+        brains, to win in an
+        electronic twist.\n
+
+        Date:Tentative
+        Venue:\n
+        Time: 4:45 pm\n
+ </string>
+
+    <string name="tech4">Mind the Snakes.\n\n
+    Description:\n\n
+        Collect your words when you walk
+        amidst the poisned pathway.
+        Make it sure that the reach
+        your comrades in the fleeting
+        mooments.\n
+
+    Venue:\n
+    Time: 4:45 pm\n
+    </string>
+
+    <string name="tech5">Bamboozled\n\n
+   Description:\n\n
+        Spin the wheel to get the
+        domain you master. Answer
+        n bet caution beacuse it
+        may bring moneybut it
+        may also end uo in a
+        disaster.\n
+    Venue:\n
+    Time: 4:45 pm\n
+
+    </string>
+
+
+
+    <string name="pa1">Mr and Mrs Freshers.\n\n
+        Description:\n\n
+        Selection will be done on the
+        basis of interviews..\n
+        Venue:\n
+    Time: 4:45 pm\n
+    </string>
+
+    <string name="pa2">Vegas Safari.\n\n
+    Description:\n\n
+        An Event consisting of 3 rounds
+        1.Roulette.
+        2.Leg Burst.
+        3.Sack Race.
+    Venue:\n
+    Time: 4:45 pm
+
+    </string>
+    <string name="pa3">Spill the Thrill\n\n
+    Description:\n\n
+        An event consisting 3 rounds.\n
+        1.Clay Sculpionary.\n
+        2.Pehchaan Kaun.\n
+        3.Hasse to Phasse.\n
+    Venue:Blue Box\n
+    Time: 4:45 pm
+    </string>
+    <string name="pa4"><big>Freshers EVE</big>\n\n
+     Description:\n\n
+    Venue:Area between VSIT and VIT\n
+    Time: 4:45 pm\n
+
+
+    </string>
+
+
+
+    <string name="la1">Heist in Vegas.\n\n
+     Description:\n\n
+        Each team will have four
+        participants. One of the
+        participant will be hidden
+        from each team. Folloe the
+        clues, solve the puzzle
+        and find our hidden teammate
+        before other teams do. The
+        first one who does wins!..
+    Venue:D201\n
+    Time: 4:45 pm\n
+    </string>
+    <string name="la2">Situation Room.\n\n
+     Description:\n\n
+        Situation room is an
+        english debate with a twist.
+        A situation ranging from
+        mythical to historic
+        factual to fictional
+        will be givem. 3 teams
+        having 3 participants
+        have to battle it out
+        wth witty tactics.
+        They will propose
+        solutions, and
+        they have to justify them.\n
+    Venue:D201,D202\n
+    Time: 4:45 pm\n
+
+
+    </string>
+    <string name="la3"> Mystery Box.\n\n
+     Description:\n\n
+        Teams of 4 participants each
+        must correctly solve a
+        riddle to obtan a mystery
+        box. This box of surprises
+        will contaion elements
+        poining to famous movies
+        or TV shows, Teams must
+        then apply their
+        imagination to incorporate
+        those movie/TV shows into
+        one vivid tale, which
+        they will narrate.
+    Venue:D201\n
+    Time: 4:45 pm\n
+    </string>
+
+
+    <string name="fa1">Artsy Craftsy\n\n
+    Description:\n\n
+        One surprise element would be
+        given and something creative
+        has to be made out of it.
+        Participants are expected
+        to get all necessary (Pencils,
+        paints, papers, Scissors.)\n
+    Venue:D204\n
+    Time: 4:45 pm\n
+    </string>
+
+
+    <string name="sports1">SutterBug\n\n
+    Description:\n\n
+            Photography Comepetion.\n
+    Date:Tentative\n
+    Venue:\n
+    Time: 4:45 pm\n
+    </string>
+
+
+</resources>

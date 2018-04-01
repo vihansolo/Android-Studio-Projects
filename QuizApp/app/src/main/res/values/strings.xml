@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    //ContentDescriptions
+    <string name="logo">logo</string>
+
+    //TextViews
+    <string name="highScore">High Score : </string>
+    <string name="score">Score : </string>
+    <string name="quesNo">Question No. :</string>
+
+    //QuesContent
+    <string name="ques1">Question</string>
+    <string name="ques1Option1">Option1</string>
+    <string name="ques1Option2">Option2</string>
+    <string name="ques1Option3">Option3</string>
+    <string name="ques1Option4">Option4</string>
+
+    //Buttons
+    <string name="start">Start</string>
+    <string name="submit">Submit</string>
+
+</resources>
