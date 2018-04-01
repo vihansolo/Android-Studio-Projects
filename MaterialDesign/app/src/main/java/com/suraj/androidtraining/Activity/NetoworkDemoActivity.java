@@ -66,10 +66,10 @@ public class NetoworkDemoActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnNetworkTest:
-                AsyncTaskForNetwork asyncTaskForNetwork = new AsyncTaskForNetwork();
-                asyncTaskForNetwork.execute();
+//                AsyncTaskForNetwork asyncTaskForNetwork = new AsyncTaskForNetwork();
+//                asyncTaskForNetwork.execute();
 
-                //getDataFromServerByRetrofit();
+                getDataFromServerByRetrofit();
                 break;
             default:
                 break;
@@ -92,9 +92,9 @@ public class NetoworkDemoActivity extends AppCompatActivity implements View.OnCl
                 String firstName = data.getFirstName();
                 String lastName = data.getLastName();
                 String avatar = data.getAvatar();
-                /*Picasso.with(NetoworkDemoActivity.this)
+                Picasso.with(NetoworkDemoActivity.this)
                         .load(avatar)
-                        .into(imageView);*/
+                        .into(imageView);
                 Toast.makeText(NetoworkDemoActivity.this, "Response:"+
                         "\nid="+id+
                         "\nfirstName="+firstName+
@@ -136,7 +136,7 @@ public class NetoworkDemoActivity extends AppCompatActivity implements View.OnCl
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            /*try {
+            try {
                 JSONObject jsonObject = new JSONObject(result);
                 JSONObject data = jsonObject.getJSONObject("data");
                 int id = data.getInt("id");
@@ -149,15 +149,14 @@ public class NetoworkDemoActivity extends AppCompatActivity implements View.OnCl
                         .into(imageView);
 
                 result = "Response:"+
-                        "\nid="+id+
-                        "\nfirstName="+firstName+
-                        "\nlastName="+lastName+
-                        "\navtar="+avatar;
+                        "\nId="+id+
+                        "\nFirstName="+firstName+
+                        "\nLastName="+lastName+
+                        "\nAvatar="+avatar;
 
             } catch (JSONException e) {
                 e.printStackTrace();
-            }*/
-
+            }
 
             //Toast.makeText(NetoworkDemoActivity.this, result, Toast.LENGTH_SHORT).show();
             tvResponse.setText(result);
@@ -192,10 +191,6 @@ public class NetoworkDemoActivity extends AppCompatActivity implements View.OnCl
             } else {
                 System.out.println("GET request not worked");
             }
-        } catch (ProtocolException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
