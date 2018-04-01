@@ -1,14 +1,10 @@
-package ga.vihanggarud.www.materialdesign;
+package com.suraj.androidtraining.Activity;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,35 +12,39 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
+import com.suraj.androidtraining.Fragment.MainFragment;
+import com.suraj.androidtraining.R;
+
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, MainFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        MainFragment.OnFragmentInteractionListener {
 
     private android.support.v4.app.FragmentManager mFragmentManager;
     private android.support.v4.app.FragmentTransaction mFragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "Snackbar", Snackbar.LENGTH_LONG)
+                        .setAction("Action",null)
+                        .show();
             }
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-            this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -55,11 +55,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void init() {
-
+        // load the new fragment
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.add(R.id.container, MainFragment.newInstance("",""),"MainFrag");
-
+        mFragmentTransaction.add(R.id.container,
+                MainFragment.newInstance("",""),"MainFrag");
         mFragmentTransaction.commit();
     }
 
@@ -97,28 +97,22 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-
-            Toast.makeText(this, "Camera Selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Camera", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_gallery) {
-
-            Toast.makeText(this, "Gallery Selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Gallery", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_slideshow) {
-
-            Toast.makeText(this, "Slideshow Selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Slideshow", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_manage) {
-
-            Toast.makeText(this, "Tools Selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Manage", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_share) {
-
-            Toast.makeText(this, "Share Selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_send) {
-
-            Toast.makeText(this, "Send Selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

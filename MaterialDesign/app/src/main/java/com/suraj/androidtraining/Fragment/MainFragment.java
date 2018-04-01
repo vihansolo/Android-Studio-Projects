@@ -1,10 +1,9 @@
-package ga.vihanggarud.www.materialdesign;
+package com.suraj.androidtraining.Fragment;
 
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,6 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.suraj.androidtraining.Activity.AnimationActivity;
+import com.suraj.androidtraining.Activity.BottomSheetActivity;
+import com.suraj.androidtraining.Activity.NetoworkDemoActivity;
+import com.suraj.androidtraining.R;
+import com.suraj.androidtraining.Utils.Constant;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,14 +26,6 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class MainFragment extends Fragment implements View.OnClickListener {
-
-    Button btnFade;
-    Button btnRotate;
-    Button btnScale;
-    Button btnSlide;
-    Button btnSharedElement;
-    Button btnBottomSheet;
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -38,6 +34,10 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    // view declaration
+    private Button btnFade, btnRotate,btnScale,btnSlide,btnSharedElement,
+            btnBottomSheet,btnNetworkTest;
 
     private OnFragmentInteractionListener mListener;
 
@@ -73,36 +73,35 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_main, container, false);
+    }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         findViews(view);
     }
 
     private void findViews(View view) {
-
         btnFade = view.findViewById(R.id.btnFade);
         btnRotate = view.findViewById(R.id.btnRotate);
         btnScale = view.findViewById(R.id.btnScale);
         btnSlide = view.findViewById(R.id.btnSlide);
         btnSharedElement = view.findViewById(R.id.btnSharedElement);
         btnBottomSheet = view.findViewById(R.id.btnBottomSheet);
+        btnNetworkTest = view.findViewById(R.id.btnNetworkTest);
 
-        //Set onClickListeners
-
+        // set click listener
         btnFade.setOnClickListener(this);
         btnRotate.setOnClickListener(this);
         btnScale.setOnClickListener(this);
         btnSlide.setOnClickListener(this);
         btnSharedElement.setOnClickListener(this);
         btnBottomSheet.setOnClickListener(this);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        btnNetworkTest.setOnClickListener(this);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -131,47 +130,40 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-
-//        switch (view.getId()) {
-//
-//            case R.id.btnFade :
-//                startAnimationActivity(Constant.MI_ANIMATION_FADE);
-//                break;
-//
-//            case R.id.btnScale :
-//                startAnimationActivity(Constant.MI_ANIMATION_SCALE);
-//                break;
-//
-//            case R.id.btnRotate :
-//                startAnimationActivity(Constant.MI_ANIMATION_ROTATE);
-//                break;
-//
-//            case R.id.btnSlide :
-//                startAnimationActivity(Constant.MI_ANIMATION_SLIDE);
-//                break;
-//
-//            case R.id.btnSharedElement :
-//                startAnimationActivity(Constant.MI_ANIMATION_SHARED_ELEMENT);
-//                break;
-//
-//            case R.id.btnBottomSheet :
-//                break;
-//
-//            default:
-//                break;
-//        }
+        switch (view.getId()) {
+            case R.id.btnFade:
+                startAnimationActivity(Constant.MI_ANIMATION_FADE);
+                break;
+            case R.id.btnRotate:
+                startAnimationActivity(Constant.MI_ANIMATION_ROTATE);
+                break;
+            case R.id.btnScale:
+                startAnimationActivity(Constant.MI_ANIMATION_SCALE);
+                break;
+            case R.id.btnSlide:
+                startAnimationActivity(Constant.MI_ANIMATION_SLIDE);
+                break;
+            case R.id.btnSharedElement:
+                startAnimationActivity(Constant.MI_ANIMATION_SHARED_ELEMENT);
+                break;
+            case R.id.btnBottomSheet:
+                startActivity(new Intent(getActivity(), BottomSheetActivity.class));
+                break;
+            case R.id.btnNetworkTest:
+                startActivity(new Intent(getActivity(), NetoworkDemoActivity.class));
+                break;
+            default:
+                break;
+        }
     }
 
-//    private void startAnimationActivity(int AnimationType) {
-//
-//        Intent intent = new Intent(getActivity(), AnimationActivity.class);
-//        Bundle bundle = new Bundle();
-//
-//        bundle.putInt(Constant.MSTR_ANIMATION_TYPE_KEY,AnimationType);
-//        intent.putExtras(bundle);
-//
-//        startActivity(intent);
-//    }
+    private void startAnimationActivity(int AnimationType) {
+        Intent intent = new Intent(getActivity(), AnimationActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putInt(Constant.MSTR_ANIMATION_TYPE_KEY,AnimationType);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 
     /**
      * This interface must be implemented by activities that contain this

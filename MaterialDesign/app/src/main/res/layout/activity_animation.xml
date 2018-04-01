@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.suraj.androidtraining.Activity.AnimationActivity">
+    
+    <ImageView
+        android:id="@+id/imgSampleLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:transitionName="logo"
+        android:src="@drawable/android_logo"/>
+
+    <TextView
+        android:id="@+id/tvTapMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/imgSampleLogo"
+        android:text="Tap above for Animation"/>
+
+</RelativeLayout>

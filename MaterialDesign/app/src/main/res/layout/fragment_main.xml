@@ -1,68 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    android:background="@color/colorBackground"
+    tools:context="com.suraj.androidtraining.Fragment.MainFragment">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnFade"
-            android:layout_width="112sp"
-            android:layout_height="58sp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="84dp"
-            android:text="@string/fade" />
+        <TextView
+            style="@style/MaterialAnimations.Text.Body"
+            android:textColor="@color/colorWhite"
+            android:text="This activity defines different Animation types" />
 
-        <Button
-            android:id="@+id/btnScale"
-            android:layout_width="112sp"
-            android:layout_height="58sp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/btnFade"
-            android:layout_marginEnd="76dp"
-            android:text="@string/scale" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnRotate"
-            android:layout_width="112sp"
-            android:layout_height="58sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/btnFade"
-            android:layout_marginTop="201dp"
-            android:text="@string/rotate" />
+            <Button
+                android:id="@+id/btnFade"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Fade" />
 
-        <Button
-            android:id="@+id/btnSlide"
-            android:layout_width="112sp"
-            android:layout_height="58sp"
-            android:text="@string/slide"
-            android:layout_alignStart="@+id/btnScale"
-            android:layout_alignTop="@+id/btnRotate" />
+            <Button
+                android:id="@+id/btnRotate"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Rotate" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnScale"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Scale" />
+
+            <Button
+                android:id="@+id/btnSlide"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Slide" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnSharedElement"
-            android:layout_width="272dp"
-            android:layout_height="58dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/btnFade"
-            android:layout_marginBottom="228dp"
-            android:text="@string/sharedElement" />
+            style="@style/MaterialAnimations.Button"
+            android:text="Shared Element Transition" />
 
         <Button
             android:id="@+id/btnBottomSheet"
-            android:layout_width="272dp"
-            android:layout_height="58dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/btnFade"
-            android:layout_marginBottom="114dp"
-            android:text="@string/bottomSheet" />
+            style="@style/MaterialAnimations.Button"
+            android:text="Bottom Sheet" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/btnNetworkTest"
+            style="@style/MaterialAnimations.Button"
+            android:text="Network Demo" />
+
+    </LinearLayout>
 
 </FrameLayout>
