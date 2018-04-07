@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <!--Inbuilt-->
+    <color name="colorPrimary">#232222</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#afafaf</color>
+
+    <!--AppBackground-->
+    <color name="Background">#e2e2e2</color>
+
+    <!--Buttons-->
+    <color name="ButtonColor">#9c9e9d</color>
 </resources>
