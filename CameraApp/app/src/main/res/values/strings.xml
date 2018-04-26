@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CameraApp</string>
+
+    //ContentDescriptions
+    <string name="pic">Pic</string>
+
+    //Buttons
+    <string name="btnTakePic">Take Picture</string>
+
+</resources>
