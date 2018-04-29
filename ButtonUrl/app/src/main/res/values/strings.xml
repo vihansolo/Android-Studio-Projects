@@ -2,5 +2,9 @@
     <string name="app_name">ButtonUrl</string>
 
     //Buttons
-    <string name="google">Google</string>
+    <string name="urlButton">Go to URL</string>
+
+    //EditTexts
+    <string name="url">Enter URL</string>
+
 </resources>
