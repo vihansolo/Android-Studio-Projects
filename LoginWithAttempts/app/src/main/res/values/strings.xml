@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">LoginWithAttempts</string>
+
+    //TextView
+    <string name="msg">Successfully Completed Login.</string>
+
+    //EditText
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    //Buttons
+    <string name="submit">Submit</string>
+
+</resources>
