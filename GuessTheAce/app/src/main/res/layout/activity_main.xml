@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="223dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/leftCard"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:contentDescription="@string/left"
+            android:src="@drawable/playing_card_back" />
+
+        <ImageView
+            android:id="@+id/middleCard"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/middle"
+            android:src="@drawable/playing_card_back" />
+
+        <ImageView
+            android:id="@+id/rightCard"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:contentDescription="@string/right"
+            android:src="@drawable/playing_card_back" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/newGame"
+        android:background="#919191" />
+
+</RelativeLayout>
